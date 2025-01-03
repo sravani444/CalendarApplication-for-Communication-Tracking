@@ -15,7 +15,7 @@ body, html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 800px; /* Increased top margin */
+  margin-top: 400px; /* Increased top margin */
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
