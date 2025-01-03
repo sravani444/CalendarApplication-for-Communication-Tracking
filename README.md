@@ -60,11 +60,10 @@ This is a React-based Calendar Application designed to help manage and track com
 - **CSS**: Custom styling for the app.
 - **LocalStorage**: For persisting company and communication data across sessions.
 
-## Installation
+## Setup and Deployment
 
-To set up the application locally:
+### 1. Clone the Repository
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/communication-tracking-calendar.git
-
+```bash
+git clone https://github.com/your-username/communication-tracking-calendar.git
+cd communication-tracking-calendar
