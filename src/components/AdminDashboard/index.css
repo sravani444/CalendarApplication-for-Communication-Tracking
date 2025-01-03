@@ -1,0 +1,63 @@
+/* General styles */ 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.admin-dashboard-container {
+  background-color: #fff;
+  padding: 20px;
+  margin: 40px auto;
+  max-width: 1000px; /* Increased the max-width for a wider container */
+  width: 90%; /* Adjust width relative to screen size */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Styling for the button container */
+.dashboard-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Styling for each button */
+.dashboard-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-button:hover {
+  background-color: #45a049;
+}
+
+/* Styling for the links inside buttons */
+.dashboard-link {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+/* Additional hover effect for links */
+.dashboard-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}

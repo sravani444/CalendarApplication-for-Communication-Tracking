@@ -1,0 +1,108 @@
+/* Top Bar Styling */
+.top-bar {
+  position: fixed; /* Fixes the top bar to the top of the page */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left edge */
+  width: 100%; /* Full width */
+  height: 70px;
+  background-color: #333; /* Dark background for the top bar */
+  color: #fff; /* White text color */
+  padding: 10px 0; /* Padding for the top bar */
+  text-align: center; /* Center the text */
+  font-size: 15px; /* Larger font size */
+  font-weight: bold; /* Bold font for emphasis */
+  z-index: 1100; /* Ensure the top bar is above the sidebar */
+  display: flex;
+  justify-content: center; /* Center the content in the middle */
+  align-items: center; /* Vertically center the content */
+}
+
+/* Add ENTNT text to the top-left corner */
+.top-left-text {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the text */
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 50px;
+}
+
+/* Sidebar Styling */
+nav {
+  position: fixed; /* Fixes the sidebar to the left of the page */
+  top: 60px; /* Add margin below the top bar */
+  left: 0; /* Align to the left edge */
+  height: 100%; /* Full height of the viewport */
+  width: 250px; /* Fixed width for the sidebar */
+  background-color: #333;
+  padding-top: 20px; /* Adds spacing from the top */
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1); /* Shadow on the right side of the sidebar */
+  z-index: 1000; /* Keeps the sidebar above other content */
+  display: flex;
+  flex-direction: column; /* Stack the links vertically */
+  justify-content: flex-start; /* Align the links to the top */
+  transition: width 0.3s ease; /* Smooth transition for width change */
+}
+
+/* Sidebar Unordered List Styling */
+nav ul {
+  list-style-type: none; /* Removes default list styling */
+  padding: 0;
+  margin-top: 50px; /* Adds space from the top of the sidebar */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align the list items */
+  justify-content: center;
+}
+
+/* Decrease width of each list item and space between them */
+nav ul li {
+  padding: 10px 30px; /* Decreased padding for narrower items */
+  margin-top: 50px; /* Increased space between list items */
+  border-bottom: 1px solid #444; /* Divider between items */
+  width: auto; /* Remove full-width constraint */
+  text-align: center; /* Center the text inside each list item */
+}
+
+/* Sidebar Link Styling */
+nav ul li a {
+  color: #444;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none; /* Removes underline */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover transition */
+  display: block; /* Make the links block-level elements */
+  padding: 8px 10px;
+  border-radius: 4px; /* Rounded corners for the links */
+  text-align: center; /* Center the text inside the link */
+}
+
+/* Hover Effect for Sidebar Links */
+nav ul li a:hover {
+  color: #4CAF50; /* Green on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Active Link Styling */
+nav ul li a.active {
+  color: #FF9800; /* Orange for active links */
+  font-weight: 700; /* Bold active link */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    width: 200px; /* Slightly reduce sidebar width on smaller screens */
+  }
+
+  nav ul li {
+    padding: 12px 15px; /* Adjust padding for smaller screens */
+    margin-bottom: 15px; /* Increased space between list items on mobile */
+  }
+
+  nav ul li a {
+    font-size: 16px; /* Smaller font size for mobile */
+  }
+}
